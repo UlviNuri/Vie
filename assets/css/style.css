@@ -1,0 +1,487 @@
+body {
+  background-color: #111215;
+}
+
+.cursor {
+  position: fixed;
+  border-radius: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  pointer-events: none;
+  left: -100px;
+  top: 50%;
+  mix-blend-mode: difference;
+  background-color: #0dcaf0;
+  z-index: 10000;
+  border: 2px solid #0dcaf0;
+  height: 30px;
+  width: 30px;
+  transition: all 100ms ease-out;
+}
+
+nav #nav_img {
+  padding: 15px 5px;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  color: white;
+}
+nav ul .icon_relative {
+  position: relative;
+}
+nav ul .icon_relative .icon_absaulte {
+  position: absolute;
+  top: 27px;
+  left: 60px;
+  font-size: 18px;
+}
+nav ul li {
+  padding: 15px 7px;
+  margin: 10px 15px;
+}
+nav ul li a {
+  color: white;
+  padding: 14px 5px;
+  font-size: 14px;
+  font-weight: 700;
+}
+nav ul li a:hover {
+  cursor: pointer;
+  color: white;
+}
+
+main #mobil_look h1 {
+  font-size: 70px;
+  color: white;
+  opacity: 1;
+}
+main #mobil_look p {
+  color: #9b9b9b;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.8;
+  opacity: 0.7;
+  margin-top: 300px;
+}
+main #mobil_look #button .app_button {
+  min-width: 220px;
+  text-align: center;
+  padding: 15px 30px;
+  font-weight: 600;
+  border-radius: 30px;
+  background-image: linear-gradient(to left, #17c0e9, #c96ddd, #f45162);
+  gap: 20px;
+  color: white;
+}
+main #mobil_look #button .app_button:hover {
+  background-image: #eeeeee;
+}
+main #mobil_look #button .play_button {
+  min-width: 220px;
+  text-align: center;
+  padding: 15px 30px;
+  font-weight: 600;
+  border-radius: 30px;
+  background-image: linear-gradient(to left, #17c0e9, #c96ddd, #f45162);
+}
+main #mobil_look #button .play_button:hover {
+  background-color: #f45162;
+}
+main .mobil_photo img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 600px;
+}
+main #partners_id {
+  background-color: #121319;
+  height: 500px;
+}
+main #partners_id #partners {
+  margin-left: 40px;
+}
+main #partners_id #partners h2 {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+main #partners_id #partners h2 span {
+  position: relative;
+}
+main #partners_id #partners h2 span img {
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  width: 80%;
+}
+main #partners_id #partners #hover_img img {
+  width: 90%;
+  margin-left: 40px;
+  opacity: 0.6;
+  transition: 0.4s all;
+}
+main #partners_id #partners #hover_img img:hover {
+  transition: all 0.4s;
+  opacity: 1;
+  transform: translateY(-10px);
+}
+main .appliaction h6 {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border-radius: 20px;
+  background-color: #f45162;
+}
+main .appliaction h6 span {
+  width: 25px;
+  height: 25px;
+  border: 1px solid white;
+  border-radius: 20px;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  color: white;
+}
+main .appliaction .custim {
+  font-size: 22px;
+  color: #f45162;
+  margin-left: 20px;
+  padding: 0 15px;
+  font-weight: 700;
+}
+main .appliaction h2 {
+  color: wheat;
+  font-size: 42px;
+  padding-top: 40px;
+}
+main .appliaction .sed_text {
+  color: #9b9b9b;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.7;
+  padding-top: 20px;
+  opacity: 0.7;
+}
+main .appliaction button {
+  min-width: 220px;
+  text-align: center;
+  padding: 15px 30px;
+  font-weight: 600;
+  border-radius: 30px;
+  background-image: linear-gradient(to left, #17c0e9, #c96ddd, #f45162);
+  margin-top: 40px;
+  color: white;
+}
+main .appliaction a {
+  color: white;
+  border-bottom: 1px solid white;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 18px;
+}
+main .appliaction #check {
+  display: flex;
+}
+main .appliaction #check .box {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: #f45162;
+  border-radius: 20px;
+  display: flex;
+  margin-top: 25px;
+}
+main .appliaction #check .box i {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .appliaction #check p {
+  color: white;
+  width: 50%;
+  margin-left: 15px;
+  margin-top: 25px;
+  font-size: 14px;
+  font-weight: 600;
+}
+main #links #link_content h6 {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border-radius: 20px;
+  background-color: #f45162;
+  margin-top: 40px;
+}
+main #links #link_content h6 span {
+  width: 25px;
+  height: 25px;
+  border: 1px solid white;
+  border-radius: 20px;
+  position: absolute;
+  top: 5px;
+  left: -15px;
+  color: white;
+}
+main #links .links {
+  color: white;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.4;
+}
+main #links .text {
+  color: #9b9b9b;
+  opacity: 0.6;
+  font-size: 20px;
+  font-weight: 600;
+}
+main #links button {
+  min-width: 220px;
+  height: 60px;
+  text-align: center;
+  padding: 15px 30px;
+  font-weight: 600;
+  border-radius: 30px;
+  border: 1px solid #f45162;
+  background-color: black;
+  color: white;
+  margin-top: 30px;
+}
+main #links span {
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 1px solid white;
+  padding: 5px 0;
+  color: white;
+  margin-left: 25px;
+}
+main #fon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #202123;
+}
+main #fon h6 {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border-radius: 20px;
+  background-color: #f45162;
+  margin-top: 40px;
+  text-align: center;
+}
+main #fon h6 span {
+  width: 25px;
+  height: 25px;
+  border: 1px solid white;
+  border-radius: 20px;
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  color: white;
+}
+main #fon p {
+  font-size: 22px;
+  color: #f45162;
+}
+main h3 {
+  color: white;
+  font-size: 38px;
+  text-align: center;
+  font-weight: 800;
+  padding: 15px 0;
+  background-color: #202123;
+}
+main #Application_Features {
+  background-color: #202123;
+}
+main #Application_Features .features {
+  width: 100%;
+  height: 200px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+main #Application_Features .features i {
+  color: #f45162;
+  font-size: 28px;
+  padding: 25px;
+  transform: skewY(-35deg);
+}
+main #Application_Features .features span {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+}
+main #Application_Features .features p {
+  color: #9b9b9b;
+  font-size: 24px;
+  padding: 15px;
+}
+main #swiper .swiper {
+  width: 100%;
+  height: 100%;
+}
+main #swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 70%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main #Compalte_Projects .complate_could {
+  width: 90%;
+  height: 250px;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+main #Compalte_Projects .complate_could i {
+  font-size: 45px;
+  color: #f45162;
+  text-align: center;
+  padding: 30px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #Compalte_Projects .complate_could h1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+main #Compalte_Projects .complate_could .step {
+  text-align: center;
+  font-size: 18px;
+  color: #f45162;
+  padding: 15px;
+}
+main #Compalte_Projects .complate_could p {
+  font-size: 18px;
+  color: #9b9b9b;
+  text-align: center;
+  opacity: 0.6;
+}
+main #vidie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #vidie iframe {
+  width: 50%;
+  margin-top: 40px;
+}
+main #team .img_relative {
+  position: relative;
+  transition: 0.2s ease-in-out;
+}
+main #team .img_relative .hover_absaulte .left {
+  width: 200px;
+  height: 220px;
+  border: 1px solid #9b9b9b;
+  position: absolute;
+  top: 3px;
+  left: -15px;
+  border-radius: 50%;
+  z-index: -4;
+}
+main #team .img_relative .hover_absaulte .bottom {
+  width: 220px;
+  height: 220px;
+  border: 1px solid #9b9b9b;
+  position: absolute;
+  top: 25px;
+  left: 30px;
+  border-radius: 50%;
+  z-index: -4;
+  background-color: #f45162;
+}
+main #team .img_relative .hover_absaulte p {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 45px;
+  padding: 25px 0;
+}
+main #team .img_relative .hover_absaulte .info {
+  color: #9b9b9b;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0;
+  opacity: 0.6;
+}
+main #team .img_relative:hover .bottom {
+  background: -webkit-linear-gradient(right, #17c0e9, #c96ddd, #f45162);
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}/*# sourceMappingURL=style.css.map */
