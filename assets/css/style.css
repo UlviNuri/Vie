@@ -23,9 +23,6 @@ nav #nav_img {
   width: 100%;
 }
 nav ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 70%;
   color: white;
 }
@@ -52,6 +49,15 @@ nav ul li a:hover {
   cursor: pointer;
   color: white;
 }
+@media only screen and (max-width: 500px) {
+  nav ul {
+    display: none;
+  }
+  nav h1 {
+    font-size: 35px;
+    font-weight: 500;
+  }
+}
 
 main #mobil_look h1 {
   font-size: 70px;
@@ -66,76 +72,109 @@ main #mobil_look p {
   opacity: 0.7;
   margin-top: 300px;
 }
-main #mobil_look #button .app_button {
+@media only screen and (max-width: 500px) {
+  main #mobil_look h1 {
+    font-size: 46px;
+    font-weight: 700;
+  }
+  main #mobil_look p {
+    color: #9b9b9b;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.8;
+    margin: 0;
+    padding: 15px 0;
+    opacity: 0.7;
+    text-align: center;
+  }
+}
+main #button .app_button {
   min-width: 220px;
   text-align: center;
   padding: 15px 30px;
   font-weight: 600;
   border-radius: 30px;
-  background-image: linear-gradient(to left, #17c0e9, #c96ddd, #f45162);
+  background: linear-gradient(to left, #17c0e9, #c96ddd, #f45162);
   gap: 20px;
   color: white;
 }
-main #mobil_look #button .app_button:hover {
-  background-image: #eeeeee;
+main #button .app_button:hover {
+  background-color: #f45162;
 }
-main #mobil_look #button .play_button {
+main #button .play_button {
   min-width: 220px;
   text-align: center;
   padding: 15px 30px;
   font-weight: 600;
   border-radius: 30px;
-  background-image: linear-gradient(to left, #17c0e9, #c96ddd, #f45162);
+  background-color: black;
+  border: 1px solid white;
+  color: white;
 }
-main #mobil_look #button .play_button:hover {
-  background-color: #f45162;
-}
-main .mobil_photo img {
-  width: 100%;
+
+.mobil_photo img {
+  max-width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
   height: 600px;
 }
-main #partners_id {
+
+#partners_id {
   background-color: #121319;
-  height: 500px;
+  height: 700px;
 }
-main #partners_id #partners {
+#partners_id #partners {
   margin-left: 40px;
 }
-main #partners_id #partners h2 {
+#partners_id #partners h2 {
   color: white;
   font-size: 40px;
   text-align: center;
 }
-main #partners_id #partners h2 span {
+#partners_id #partners h2 span {
   position: relative;
 }
-main #partners_id #partners h2 span img {
+#partners_id #partners h2 span img {
   position: absolute;
   top: 5px;
   left: 0px;
   width: 80%;
 }
-main #partners_id #partners #hover_img img {
+#partners_id #partners #hover_img img {
   width: 90%;
   margin-left: 40px;
   opacity: 0.6;
   transition: 0.4s all;
 }
-main #partners_id #partners #hover_img img:hover {
+#partners_id #partners #hover_img img:hover {
   transition: all 0.4s;
   opacity: 1;
   transform: translateY(-10px);
 }
-main .appliaction h6 {
+@media only screen and (max-width: 500px) {
+  #partners_id #hover_img img {
+    max-width: 50%;
+    display: flex;
+  }
+  #partners_id .delete {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #vie_react_photo img {
+    margin-top: 70px;
+  }
+}
+
+.appliaction h6 {
   position: relative;
   width: 25px;
   height: 25px;
   border-radius: 20px;
   background-color: #f45162;
 }
-main .appliaction h6 span {
+.appliaction h6 span {
   width: 25px;
   height: 25px;
   border: 1px solid white;
@@ -145,19 +184,19 @@ main .appliaction h6 span {
   left: 10px;
   color: white;
 }
-main .appliaction .custim {
+.appliaction .custim {
   font-size: 22px;
   color: #f45162;
   margin-left: 20px;
   padding: 0 15px;
   font-weight: 700;
 }
-main .appliaction h2 {
+.appliaction h2 {
   color: wheat;
   font-size: 42px;
   padding-top: 40px;
 }
-main .appliaction .sed_text {
+.appliaction .sed_text {
   color: #9b9b9b;
   font-size: 24px;
   font-weight: 700;
@@ -165,7 +204,7 @@ main .appliaction .sed_text {
   padding-top: 20px;
   opacity: 0.7;
 }
-main .appliaction button {
+.appliaction button {
   min-width: 220px;
   text-align: center;
   padding: 15px 30px;
@@ -175,17 +214,17 @@ main .appliaction button {
   margin-top: 40px;
   color: white;
 }
-main .appliaction a {
+.appliaction a {
   color: white;
   border-bottom: 1px solid white;
   padding: 10px;
   font-weight: 600;
   font-size: 18px;
 }
-main .appliaction #check {
+.appliaction #check {
   display: flex;
 }
-main .appliaction #check .box {
+.appliaction #check .box {
   position: relative;
   width: 20px;
   height: 20px;
@@ -194,7 +233,7 @@ main .appliaction #check .box {
   display: flex;
   margin-top: 25px;
 }
-main .appliaction #check .box i {
+.appliaction #check .box i {
   position: absolute;
   top: 2px;
   left: 2px;
@@ -203,7 +242,7 @@ main .appliaction #check .box i {
   justify-content: center;
   align-items: center;
 }
-main .appliaction #check p {
+.appliaction #check p {
   color: white;
   width: 50%;
   margin-left: 15px;
@@ -211,7 +250,7 @@ main .appliaction #check p {
   font-size: 14px;
   font-weight: 600;
 }
-main #links #link_content h6 {
+#links #link_content h6 {
   position: relative;
   width: 25px;
   height: 25px;
@@ -219,7 +258,7 @@ main #links #link_content h6 {
   background-color: #f45162;
   margin-top: 40px;
 }
-main #links #link_content h6 span {
+#links #link_content h6 span {
   width: 25px;
   height: 25px;
   border: 1px solid white;
@@ -229,19 +268,19 @@ main #links #link_content h6 span {
   left: -15px;
   color: white;
 }
-main #links .links {
+#links .links {
   color: white;
   font-weight: 700;
   font-size: 60px;
   line-height: 1.4;
 }
-main #links .text {
+#links .text {
   color: #9b9b9b;
   opacity: 0.6;
   font-size: 20px;
   font-weight: 600;
 }
-main #links button {
+#links button {
   min-width: 220px;
   height: 60px;
   text-align: center;
@@ -253,7 +292,7 @@ main #links button {
   color: white;
   margin-top: 30px;
 }
-main #links span {
+#links span {
   font-size: 18px;
   font-weight: 600;
   border-bottom: 1px solid white;
@@ -261,13 +300,29 @@ main #links span {
   color: white;
   margin-left: 25px;
 }
-main #fon {
+@media only screen and (max-width: 500px) {
+  #links .links p {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1.4;
+  }
+  #links .text {
+    color: #9b9b9b;
+    opacity: 0.6;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 0;
+    line-height: 1.6;
+  }
+}
+
+#fon {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #202123;
 }
-main #fon h6 {
+#fon h6 {
   position: relative;
   width: 25px;
   height: 25px;
@@ -276,7 +331,7 @@ main #fon h6 {
   margin-top: 40px;
   text-align: center;
 }
-main #fon h6 span {
+#fon h6 span {
   width: 25px;
   height: 25px;
   border: 1px solid white;
@@ -286,11 +341,11 @@ main #fon h6 span {
   left: 15px;
   color: white;
 }
-main #fon p {
+#fon p {
   font-size: 22px;
   color: #f45162;
 }
-main h3 {
+h3 {
   color: white;
   font-size: 38px;
   text-align: center;
@@ -298,36 +353,35 @@ main h3 {
   padding: 15px 0;
   background-color: #202123;
 }
-main #Application_Features {
+#Application_Features {
   background-color: #202123;
 }
-main #Application_Features .features {
+#Application_Features .features {
   width: 100%;
   height: 200px;
-  border: 1px solid white;
   border-radius: 10px;
+  background-color: #252527;
 }
-main #Application_Features .features i {
+#Application_Features .features i {
   color: #f45162;
   font-size: 28px;
   padding: 25px;
-  transform: skewY(-35deg);
 }
-main #Application_Features .features span {
+#Application_Features .features span {
   color: white;
   font-size: 24px;
   font-weight: 600;
 }
-main #Application_Features .features p {
+#Application_Features .features p {
   color: #9b9b9b;
   font-size: 24px;
   padding: 15px;
 }
-main #swiper .swiper {
+#swiper .swiper {
   width: 100%;
   height: 100%;
 }
-main #swiper .swiper-slide {
+#swiper .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -336,20 +390,21 @@ main #swiper .swiper-slide {
   justify-content: center;
   align-items: center;
 }
-main #swiper .swiper-slide img {
+#swiper .swiper-slide img {
   display: block;
   width: 100%;
   height: 70%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-main #Compalte_Projects .complate_could {
+
+#Compalte_Projects .complate_could {
   width: 90%;
   height: 250px;
-  border: 1px solid gray;
+  border: 1px solid rgb(78, 77, 77);
   border-radius: 10px;
 }
-main #Compalte_Projects .complate_could i {
+#Compalte_Projects .complate_could i {
   font-size: 45px;
   color: #f45162;
   text-align: center;
@@ -358,38 +413,45 @@ main #Compalte_Projects .complate_could i {
   justify-content: center;
   align-items: center;
 }
-main #Compalte_Projects .complate_could h1 {
+#Compalte_Projects .complate_could h1 {
   text-align: center;
   font-size: 24px;
   font-weight: 600;
   color: #fff;
 }
-main #Compalte_Projects .complate_could .step {
+#Compalte_Projects .complate_could .step {
   text-align: center;
   font-size: 18px;
   color: #f45162;
   padding: 15px;
 }
-main #Compalte_Projects .complate_could p {
+#Compalte_Projects .complate_could p {
   font-size: 18px;
   color: #9b9b9b;
   text-align: center;
   opacity: 0.6;
 }
-main #vidie {
+
+#vidie {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main #vidie iframe {
-  width: 50%;
+#vidie iframe {
+  width: 70%;
   margin-top: 40px;
 }
-main #team .img_relative {
+@media only screen and (max-width: 500px) {
+  #vidie iframe {
+    width: 100%;
+  }
+}
+
+#team .img_relative {
   position: relative;
   transition: 0.2s ease-in-out;
 }
-main #team .img_relative .hover_absaulte .left {
+#team .img_relative .hover_absaulte .left {
   width: 200px;
   height: 220px;
   border: 1px solid #9b9b9b;
@@ -399,7 +461,7 @@ main #team .img_relative .hover_absaulte .left {
   border-radius: 50%;
   z-index: -4;
 }
-main #team .img_relative .hover_absaulte .bottom {
+#team .img_relative .hover_absaulte .bottom {
   width: 220px;
   height: 220px;
   border: 1px solid #9b9b9b;
@@ -410,22 +472,478 @@ main #team .img_relative .hover_absaulte .bottom {
   z-index: -4;
   background-color: #f45162;
 }
-main #team .img_relative .hover_absaulte p {
+#team .img_relative .hover_absaulte p {
   color: white;
   font-size: 24px;
   font-weight: 600;
   margin-left: 45px;
   padding: 25px 0;
 }
-main #team .img_relative .hover_absaulte .info {
+#team .img_relative .hover_absaulte .info {
   color: #9b9b9b;
   font-size: 18px;
   font-weight: 400;
   padding: 0;
   opacity: 0.6;
 }
-main #team .img_relative:hover .bottom {
+#team .img_relative:hover .bottom {
   background: -webkit-linear-gradient(right, #17c0e9, #c96ddd, #f45162);
+}
+
+#Mobile_Application {
+  height: 700px;
+  width: 100%;
+}
+#Mobile_Application #free_package {
+  height: 600px;
+  border: 1px solid transparent;
+  background-color: #111215;
+  border: 1px solid white;
+}
+#Mobile_Application #free_package h2 {
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-weight: 700;
+  line-height: 1.3;
+  font-size: 24px;
+}
+#Mobile_Application #free_package span {
+  color: white;
+  font-weight: 700;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+}
+#Mobile_Application #free_package span p {
+  color: #f45162;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 1;
+}
+#Mobile_Application #free_package button {
+  width: 80%;
+  height: 70px;
+  text-align: center;
+  color: #fff;
+  background-color: #252527;
+  border: none;
+  border-radius: 50px;
+  padding: 15px;
+  margin-left: 50px;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 25px;
+}
+#Mobile_Application #free_package #check {
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  margin-left: 25px;
+}
+#Mobile_Application #free_package #check .box {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: #f45162;
+  border-radius: 20px;
+  display: flex;
+  margin-top: 25px;
+}
+#Mobile_Application #free_package #check .box i {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Mobile_Application #free_package #check p {
+  color: white;
+  width: 50%;
+  margin-left: 15px;
+  margin-top: 25px;
+  font-size: 14px;
+  font-weight: 600;
+}
+#Mobile_Application #free_package #check .opacity_text {
+  width: 50%;
+  margin-left: 15px;
+  margin-top: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  opacity: 0.3;
+}
+#Mobile_Application #Free_Package {
+  height: 600px;
+  border: 1px solid transparent;
+  background-color: #202123;
+}
+#Mobile_Application #Free_Package h2 {
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-weight: 700;
+  line-height: 1.3;
+  font-size: 24px;
+}
+#Mobile_Application #Free_Package span {
+  color: white;
+  font-weight: 700;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+}
+#Mobile_Application #Free_Package span p {
+  color: #f45162;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 1;
+}
+#Mobile_Application #Free_Package button {
+  width: 80%;
+  height: 70px;
+  text-align: center;
+  color: #fff;
+  background-color: #252527;
+  border: none;
+  border-radius: 50px;
+  padding: 15px;
+  margin-left: 50px;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 25px;
+  background: linear-gradient(to left, #17c0e9, #c96ddd, #f45162);
+}
+#Mobile_Application #Free_Package #check {
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  margin-left: 25px;
+}
+#Mobile_Application #Free_Package #check .box {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: #f45162;
+  border-radius: 20px;
+  display: flex;
+  margin-top: 25px;
+}
+#Mobile_Application #Free_Package #check .box i {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Mobile_Application #Free_Package #check p {
+  color: white;
+  width: 50%;
+  margin-left: 15px;
+  margin-top: 25px;
+  font-size: 14px;
+  font-weight: 600;
+}
+#Mobile_Application #Free_Package #check .opacity_text {
+  width: 50%;
+  margin-left: 15px;
+  margin-top: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  opacity: 0.3;
+}
+@media only screen and (max-width: 500px) {
+  #Mobile_Application #check {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+}
+#Mobile_Application #fon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #202123;
+}
+#Mobile_Application #fon h6 {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border-radius: 20px;
+  background-color: #f45162;
+  margin-top: 40px;
+  text-align: center;
+}
+#Mobile_Application #fon h6 span {
+  width: 25px;
+  height: 25px;
+  border: 1px solid white;
+  border-radius: 20px;
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  color: white;
+}
+#Mobile_Application #fon p {
+  font-size: 22px;
+  color: #f45162;
+}
+@media only screen and (max-width: 500px) {
+  #Mobile_Application #fon {
+    display: none;
+  }
+}
+#Mobile_Application h3 {
+  color: white;
+  font-size: 38px;
+  text-align: center;
+  font-weight: 800;
+  padding: 15px 0;
+  background-color: #202123;
+}
+@media only screen and (max-width: 500px) {
+  #Mobile_Application h3 {
+    display: none;
+  }
+}
+#Mobile_Application #About_Services {
+  width: 100%;
+  height: 650px;
+  background-color: #202123;
+}
+#Mobile_Application #About_Services .swiper_comment {
+  width: 100%;
+  height: 500px;
+}
+#Mobile_Application #About_Services .swiper_comment .swiper {
+  width: 100%;
+  height: 100%;
+}
+#Mobile_Application #About_Services .swiper_comment .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Mobile_Application #About_Services .swiper_comment .swiper-slide .img {
+  width: 10%;
+  height: 150px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#Mobile_Application #About_Services .swiper_comment .card_swiper_second {
+  background-color: #111215;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+}
+#Mobile_Application #About_Services .swiper_comment .card_swiper_second .img_swiper img {
+  width: 70px;
+  height: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media only screen and (max-width: 500px) {
+  #Mobile_Application #About_Services .swiper_comment .card_swiper_second .img_swiper {
+    display: none;
+  }
+}
+#Mobile_Application #About_Services .swiper_comment .card_swiper_second .swiper_img_pp img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#Mobile_Application #About_Services .swiper_comment .card_swiper_second .text_swiper,
+#Mobile_Application #About_Services .swiper_comment .card_swiper_second .swiper_name {
+  color: #9b9b9b;
+}
+#Mobile_Application #About_Services .swiper_comment .card_swiper_second:hover {
+  border: 1px solid wheat;
+}
+@media only screen and (max-width: 500px) {
+  #Mobile_Application #About_Services {
+    display: none;
+  }
+}
+#Mobile_Application #download_app {
+  width: 80%;
+  height: 400px;
+  margin-left: 10%;
+  background: rgb(63, 94, 251);
+  background: radial-gradient(circle, rgb(63, 94, 251) 0%, rgb(252, 70, 107) 100%);
+}
+#Mobile_Application #download_app .img_color {
+  margin: -70px 0;
+}
+@media only screen and (max-width: 500px) {
+  #Mobile_Application #download_app .img_color img {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #Mobile_Application #download_app {
+    display: none;
+  }
+}
+#Mobile_Application .left_item {
+  position: relative;
+}
+#Mobile_Application .left_item ::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  border: 1px solid white;
+  background-color: white;
+  margin-top: 20px;
+}
+#Mobile_Application .left_item ::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border: 1px solid white;
+  margin-top: 20px;
+}
+#Mobile_Application .left_item .left_text p {
+  padding: 35px 50px;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+}
+#Mobile_Application .left_item .left_text h2 {
+  color: white;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 1.8;
+}
+#Mobile_Application .left_item #button .app_button {
+  min-width: 220px;
+  text-align: center;
+  padding: 15px 30px;
+  font-weight: 600;
+  border-radius: 30px;
+  background-color: white;
+  gap: 20px;
+  border: 1px solid transparent;
+}
+#Mobile_Application .left_item #button .play_button {
+  min-width: 220px;
+  text-align: center;
+  padding: 15px 30px;
+  font-weight: 600;
+  border-radius: 30px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+@media only screen and (max-width: 500px) {
+  #Mobile_Application .left_item {
+    display: none;
+  }
+}
+#Mobile_Application footer {
+  width: 100%;
+  height: 300px;
+  background: rgb(180, 58, 157);
+  background: linear-gradient(90deg, rgb(83, 48, 76) 2%, rgb(83, 82, 82) 6%, rgb(0, 0, 0) 90%, rgb(148, 39, 39) 100%, rgb(214, 56, 56) 100%, rgb(252, 176, 69) 100%, rgba(255, 105, 226, 0.8606793059) 15555%);
+}
+@media only screen and (max-width: 500px) {
+  #Mobile_Application footer .footer_img {
+    display: none;
+  }
+}
+#Mobile_Application footer .sed {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+  padding: 15px 0;
+  opacity: 0.7;
+  color: #dad6d6;
+}
+@media only screen and (max-width: 500px) {
+  #Mobile_Application footer .sed {
+    display: none;
+  }
+}
+#Mobile_Application footer #Resources {
+  width: 100%;
+  height: 450px;
+}
+#Mobile_Application footer #Resources h5 {
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+}
+#Mobile_Application footer #Resources ul {
+  cursor: pointer;
+}
+#Mobile_Application footer #Resources ul li {
+  padding: 15px 0;
+}
+#Mobile_Application footer #Resources ul li i {
+  color: #9b9b9b;
+  font-size: 18px;
+  font-weight: 500;
+}
+@media only screen and (max-width: 500px) {
+  #Mobile_Application footer #Resources {
+    display: none;
+  }
+}
+#Mobile_Application footer #social h5 {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 700;
+}
+#Mobile_Application footer #social p {
+  color: #9b9b9b;
+  font-weight: 400;
+  padding: 15px 0;
+}
+#Mobile_Application footer #social .mail {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+#Mobile_Application footer #social #icon {
+  gap: 10px;
+  display: flex;
+}
+#Mobile_Application footer #social #icon i {
+  color: white;
+  text-align: center;
+  border-radius: 30px;
+  padding: 10px;
+  border: 1px solid;
+}
+@media only screen and (max-width: 500px) {
+  #Mobile_Application footer #social {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #Mobile_Application footer {
+    display: none;
+    background: none;
+  }
 }
 
 html, body, div, span, applet, object, iframe,
